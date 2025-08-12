@@ -1,5 +1,9 @@
 # Design - Web & Cloud for Crowd Monitor
 
+## Summary
+
+This project consists of a full-stack web application for mapping potholes. The backend is built with Express.js and provides a REST API, while the frontend uses React with Vite for fast development and hot module replacement. The server is configured to handle CORS and JSON requests, and includes dependencies for future database integration (Mongoose). The client is styled with CSS and includes ESLint configuration for code quality. The application is structured for easy
+
 ## Tech stack Dev setup
 
 TODO(sairiteshdomakuntla): Fill this section based on your analysis.
