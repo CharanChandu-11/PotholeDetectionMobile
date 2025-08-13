@@ -306,6 +306,85 @@ Detailed view of a single pothole report.
 
 TODO(hemanth-p-41)
 
+## 1. Map & Location APIs
+
+| API | Use |
+| --- | --- |
+| *Google Maps SDK* | Display maps, mark pothole locations |
+| *Geolocation API* (geolocator, FusedLocationProviderClient) | Get user’s real-time GPS location |
+| *Reverse Geocoding API* (Google or Mapbox) | Convert latitude/longitude to human-readable address |
+| *OpenStreetMap API* (alternative) | Free maps and location services |
+
+---
+
+## 2. Camera & Media APIs
+
+| API | Use |
+| --- | --- |
+| *Camera API* (image_picker, CameraX) | Open device camera to click pothole photos |
+| *Gallery/File Picker API* | Let user upload existing photo from device |
+| *Storage Access Framework* (Android) | Access local image files (if needed) |
+
+---
+
+## 3. Network & Backend APIs
+
+| API | Use |
+| --- | --- |
+| *Firebase Realtime DB / Firestore* | Store pothole reports (location, image URL, timestamp) |
+| *Firebase Storage / AWS S3* | Store pothole images (scalable cloud storage) |
+| *REST APIs* (custom) | Send/receive data from your own backend |
+| *Axios / Dio / HTTP (client)* | For making API calls to your server |
+
+---
+
+## 4. Authentication APIs
+
+| API | Use |
+| --- | --- |
+| *Firebase Authentication* | Login/signup with Email, Google, Phone OTP |
+| *Google Sign-In API* | Enable Google login |
+| *Phone Auth (Firebase)* | Login using SMS OTP verification |
+| *Anonymous Auth (Firebase)* | Allow users to report without full login |
+
+---
+
+## 5. Notifications
+
+| API | Use |
+| --- | --- |
+| *Firebase Cloud Messaging (FCM)* | Push notifications to users (e.g., status updates) |
+| *OneSignal* (alternative) | Free service for push notifications |
+
+---
+
+## 6. Background Tasks & Sync
+
+| API | Use |
+| --- | --- |
+| *WorkManager (Android)* | Upload reports/images in background |
+| *Flutter Workmanager* | For background tasks in Flutter apps |
+| *Connectivity Plus* | Check network connection before upload |
+
+---
+
+## 7. Smart Detection APIs
+
+| API | Use |
+| --- | --- |
+| *Accelerometer & Gyroscope Sensors* | Detect potholes automatically by monitoring bumps while driving |
+| *OpenCV / TensorFlow Lite* | Image-based pothole detection using ML model |
+| *ML Kit by Google* | Light-weight ML APIs (image labeling, object detection) |
+
+---
+
+## 8. Admin/Dashboard APIs (for Web View)
+
+| API | Use |
+| --- | --- |
+| *Google Charts / Chart.js* | Visualize data (e.g., total potholes reported) |
+| *Leaflet / Mapbox (for web)* | For interactive pothole map in admin panel |
+
 ## Backend APIs required
 
 TODO(manishnarmala)
