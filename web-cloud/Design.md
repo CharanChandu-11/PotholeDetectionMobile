@@ -19,6 +19,13 @@ TODO(MohitKarthiekeya): Fill this section based on your analysis.
 ## Database schema
 
 TODO(gaddalecharmi): Fill this section based on your analysis.
+Defined the basic database schema for the Pothole Mapper project using Mongoose (MongoDB). Created three key models:
+
+User Schema – stores commuter, municipal staff, and admin details with role-based access.
+
+Pothole Schema – stores reported pothole data including location, images, AI verification status, and repair progress.
+
+Feedback Schema – stores user feedback, ratings, and optional links to specific potholes.
 
 ## List of APIs
 
