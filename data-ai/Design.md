@@ -38,29 +38,7 @@ Format: JPEG images in folder-based separation (no nested folders, no train/test
 TODO(ShashankVinnakota): Fill this section based on your analysis.
 
 ## Generic chatbots
-Generic chatbots use : CHATGPT,GOOGLE GEMINI
-Dataset Name  : Pothole Detection Dataset – by Atulyakumar98
-Dataset Source : https://www.kaggle.com/datasets/atulyakumar98/pothole-detection-dataset
-Domain : Computer Vision – Binary Image Classification (Pothole vs. Normal Road)
-Data Description : Contains 300+ JPEG images grouped into two main categories: 
-• potholes  – road images with visible potholes
-• normal – road images without potholes
-File Structure : Simple folder-based class separation with no nested folders. No separate train/test folders provided.
-Image Resolution : Mixed resolutions — varies from low-quality compressed images to high-resolution road captures. Requires resizing before training.
-Image Variety :
- Images vary in: 
-• Lighting (daylight, cloudy, shaded)
-• Camera angles (top-down, side view) 
-• Road types (asphalt, concrete, rural paths)
-Data Quality :
-Moderate — Some images have low sharpness or contain background distractions (cars, pedestrians, road markings). No major noise or irrelevant content.
-Potential Issues : 
-Small dataset size → high risk of overfitting; 
-No metadata;
-No location/time diversity info; 
-Folder labeling assumes perfect accuracy.
 
-Dataset is suitable for beginners to practice binary classification.Mixed image qualities might help generalization but require normalization.Absence of bounding boxes limits use for object detection tasks.
 
 TODO(architha-196): Fill this section based on your analysis.
 
