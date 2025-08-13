@@ -23,14 +23,17 @@ Ensure the following are installed on your system:
 ```bash
 git clone <repo-url>
 cd mobile/potholeDetection
+```
 3. Install Dependencies
-bash
+```bash
 npm install
 # or
 yarn install
+```
 4. Run the Application
-bash
+```bash
 npx expo start
+```
 This will:
 
 Start the Expo development server
@@ -49,7 +52,7 @@ Expo Modules – for camera, location, and sensor access
 
 Basic Folder Structure:
 
-bash
+```bash
 potholeDetection/
 ├── assets/              # Images, fonts, etc.
 ├── src/
@@ -60,6 +63,7 @@ potholeDetection/
 ├── App.js
 ├── package.json
 ├── tailwind.config.js
+```
 Navigation Setup
 React Navigation is pre-configured with:
 
@@ -77,19 +81,21 @@ Open the Expo Go app
 
 Scan the QR code shown in your terminal or browser after running:
 
-bash
+```bash
 
 npx expo start
+```
 Running on an Emulator
 Android: Install Android Studio, set up a Virtual Device, and run:
 
-bash
+```bash
 npx expo start --android
+```
 iOS (Mac only): Install Xcode and run:
 
-bash
+```bash
 npx expo start --ios
-
+```
 
 ## Data flow
 
