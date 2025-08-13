@@ -259,6 +259,49 @@ Detailed view of a single pothole report.
 - Make components responsive and reusable  
 
 
+## Data Flow
+
+### Actors
+- Commenter (User) – Reports potholes via the mobile app.
+- Municipal Staff – Views reports, updates repair status.
+- Admin – Oversees system, resolves conflicts in severity.
+- AI Engine – Analyzes uploaded images to detect potholes and assign severity.
+
+### Process Overview
+
+#### 1. Report Pothole (Commenter)
+- User uploads a photo with geo-tag (location) and severity level.
+- Data is sent to the AI Engine for verification.
+- Report is stored in the Pothole Reports Database.
+
+#### 2. AI Detection & Severity Analysis
+- AI analyzes the uploaded image for pothole presence.
+- Estimates depth and assigns severity (Low, Medium, High).
+- Compares its output with user-provided severity.
+- Updates the report in the database.
+
+#### 3. Crowd Validation & Prioritization
+- Multiple reports for the same pothole increase its priority.
+- Final severity is determined using AI results, user input, and report frequency.
+
+#### 4. Repair Management (Municipal Staff)
+- Staff view potholes sorted by severity and priority.
+- Update repair status: Pending → Work Started → Fixed.
+
+#### 5. User Interaction
+- Users can view status updates and severity details.
+- Can comment/review potholes or request alternate routes avoiding severe ones.
+- Receive notifications when repair status changes.
+
+#### 6. Admin Management
+- Admin resolves mismatches between AI and user severity.
+- Oversees user management and system integrity.
+
+### Data Stores
+- Pothole Reports DB – Stores report details, images, severity, location.
+- Users DB – Stores user details, roles, and history.
+- Notification Queue – Stores pending notifications for delivery.
+
 ## Device APIs
 
 TODO(hemanth-p-41)
