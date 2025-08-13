@@ -19,6 +19,7 @@ TODO(MohitKarthiekeya): Fill this section based on your analysis.
 ## Database schema
 
 TODO(gaddalecharmi): Fill this section based on your analysis.
+
 **The basic database schema for the Pothole Mapper project using Mongoose (MongoDB) includes the three key models:**
 
 **User Schema** – stores commuter, municipal staff, and admin details with role-based access.
@@ -30,6 +31,7 @@ TODO(gaddalecharmi): Fill this section based on your analysis.
 ## List of APIs
 
 TODO(gaddalecharmi): Fill this section based on your analysis.
+
 We require the following API's: 
 
 -Google Maps JavaScript API
