@@ -4,6 +4,35 @@
 
 TODO(Pranavi1110): Fill this section based on your analysis.
 
+For this project, pothole data will be collected from multiple sources to ensure variety and robustness for AI model training. The primary dataset used is the Pothole Detection Dataset – by Atulyakumar98 from Kaggle, which contains ~300 labeled road images in two categories:
+potholes – images with visible potholes
+normal – images without potholes
+
+**Primary Data Source**
+Dataset Name: Pothole Detection Dataset – by Atulyakumar98
+Source: https://www.kaggle.com/datasets/atulyakumar98/pothole-detection-dataset
+Type: Binary Image Classification (Computer Vision)
+Format: JPEG images in folder-based separation (no nested folders, no train/test split provided)
+
+**Additional Data Collection Strategies**
+•Crowdsourcing: Mobile app feature to allow citizens to upload pothole images along with GPS coordinates.
+•Government & Municipal Records: Road maintenance archives containing pothole photographs and repair logs.
+•On-Vehicle Cameras: Dashcam/IoT-based continuous road scanning for real-time data capture.
+•Drone Surveillance: Aerial road scans for large-scale detection.
+
+**Data Collection Challenges**
+•Limited size of existing datasets (risk of overfitting).
+•Variation in image resolution and quality.
+•Different lighting conditions, angles, and road textures.
+•Absence of metadata (time, location, severity).
+•Potential mislabeling in public datasets.
+
+**Preprocessing Requirements**
+•Resize images to a consistent resolution (e.g., 224×224 px).
+•Normalize pixel values for uniform input.
+•Apply data augmentation (rotation, flips, brightness adjustment) to improve generalization.
+•Split dataset into train/validation/test sets while keeping class balance.
+
 ## Sample dataset
 
 TODO(ShashankVinnakota): Fill this section based on your analysis.
