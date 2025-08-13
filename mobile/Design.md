@@ -346,3 +346,25 @@ TODO(manishnarmala)
 ## Play Store Setup
 
 TODO(khyathampratikshareddy-gif)
+
+### Sign in with your personal Google account
+
+   -> Go to: https://play.google.com/console
+
+   -> Click "Go to Play Console"
+
+   -> Sign in using your existing Google account (phd.mobile25@gmail.com)
+
+   -> If the account doesn't have two-step verification enabled, turn it on (already enabled)
+
+   -> Choose whether you're creating the account for an organization/business or for yourself (yourself)
+    <img width="1904" height="969" alt="Screenshot 2025-08-13 105045" src="https://github.com/user-attachments/assets/52a0fc4a-d132-41b7-a334-cd1b09158819" />
+
+
+   -> Set a Developer name (PHD Developers)
+    <img width="1919" height="973" alt="Screenshot 2025-08-13 105206" src="https://github.com/user-attachments/assets/903a24be-2781-4028-abb9-9393ad50fe32" />
+
+
+   -> I'm stuck at the step: "Link a payments profile to verify your identity."
+    <img width="1914" height="967" alt="Screenshot 2025-08-13 105237" src="https://github.com/user-attachments/assets/39673bf0-a2bb-402b-a7f8-5366d2728286" />
+
