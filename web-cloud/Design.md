@@ -48,6 +48,8 @@ We require the following API's:
 
 -Cloudinary Upload API
 
+-Municipality Office API
+
 -Roboflow API / Hugging Face API
 
 -Firebase Cloud Messaging (FCM)
