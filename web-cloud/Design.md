@@ -83,3 +83,68 @@ We require the following API's:
 ## Security
 
 TODO(pthanmayee) : Fill this section based on your analysis.
+
+1. Authentication
+   
+JWT-based Auth (Access + Refresh tokens)
+
+Access token: Short-lived (e.g., 15–30 min)
+
+Refresh token: Long-lived, stored securely in HTTP-only cookies.
+
+Role-based Access Control (RBAC)
+
+Roles: commuter, municipal_staff, admin.
+
+Middleware checks role before allowing access to sensitive routes.
+
+OAuth 2.0 (optional)
+
+Allow login with Google/Facebook for commuters to simplify sign-up.
+
+2. API Security
+   
+HTTPS everywhere (TLS 1.2+) to encrypt traffic.
+
+CORS policy restricted to trusted domains (React frontend + admin panel).
+
+Rate Limiting to prevent abuse of reporting APIs (e.g., express-rate-limit).
+
+Input Validation & Sanitization (e.g., express-validator) to prevent SQL/NoSQL injection and XSS.
+
+CSRF Protection for state-changing requests if cookies are used.
+
+3. File & Cloud Security
+   
+AWS S3 Bucket Security
+
+Private by default; signed URLs for temporary access.
+
+Scan uploads with an antivirus service (e.g., ClamAV Lambda) before storage.
+
+Cloudinary / Roboflow / HuggingFace API Keys stored in server-side .env only.
+
+4. Database Security (MongoDB)
+   
+Use IP whitelisting and VPC peering (no public DB access).
+
+Enable authentication & TLS for DB connections.
+
+Enforce schema validation in Mongoose to reject malformed data.
+
+5. Session & Token Management
+   
+Expire tokens immediately after password reset or logout.
+
+Store refresh tokens in DB to allow forced logouts (token revocation).
+
+Use strong hashing (bcrypt) for passwords.
+
+6. Monitoring & Alerts
+   
+Audit logs for all admin actions.
+
+Track login attempts & lock account on repeated failures (brute-force prevention).
+
+Enable AWS CloudWatch & MongoDB Atlas Alerts for suspicious activity.
+
