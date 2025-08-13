@@ -93,4 +93,64 @@ These APIs implement deep learning architectures such as CNNs, R-CNN variants, a
 
 ## Privacy
 
-TODO(karthikG0017) : Fill this section based on your analysis.
+The PotHoleMapper system handles sensitive data such as GPS location, road videos, and usage metadata.  
+Protecting this data is critical to maintain user trust, comply with laws, and ensure ethical use.
+
+### 1. Potential Privacy Issues
+1. **Location Tracking**
+   - GPS data can reveal a person’s home, workplace, and travel patterns.
+2. **Accidental Capture of Personal Information**
+   - Videos may include faces, license plates, or private property without consent.
+3. **Unsecured Data Storage**
+   - If data is stored without encryption, it can be stolen or misused.
+4. **Unauthorized Access**
+   - Weak permissions may allow unintended people to view or copy sensitive data.
+5. **Long-Term Data Retention**
+   - Keeping raw media indefinitely increases the risk of future leaks.
+
+### 2. Mitigation Strategies
+- **Minimize Data Collection**
+  - Gather only the data needed for pothole detection.
+- **Anonymization**
+  - Blur faces, license plates, and private property in videos before storing.
+- **Location Generalization**
+  - Round GPS coordinates unless exact precision is necessary for repairs.
+- **Secure Storage**
+  - Encrypt data in transit (HTTPS/TLS) and at rest (AES-256).
+- **User Consent**
+  - Ask for clear permission before enabling camera and GPS features.
+- **Data Retention Policy**
+  - Delete or anonymize raw data after processing; keep only non-identifiable summaries.
+- **Access Logging**
+  - Keep logs of who accesses data to detect and stop misuse.
+
+---
+
+## Piracy / Threats
+
+In addition to privacy, we must protect our intellectual property (datasets, models, source code) from unauthorized use or theft.
+
+### 1. Potential Piracy / Threat Issues
+1. **Dataset Piracy**
+   - Pothole image datasets could be copied and reused without permission.
+2. **Model Piracy**
+   - Trained AI models (.pt, .tflite) might be stolen or sold.
+3. **API Misuse**
+   - Public APIs could be spammed or exploited by bots.
+4. **Source Code Piracy**
+   - Code on GitHub could be copied without credit.
+5. **Mobile App Cloning**
+   - Someone could clone the app and reupload it under a different name.
+
+### 2. Mitigation Strategies
+- **Dataset Protection**
+  - License under Creative Commons (CC BY-NC-SA), watermark, share only samples.
+- **Model Protection**
+  - Obfuscate or encrypt model files, deploy models on secure servers instead of shipping locally.
+- **API Security**
+  - Require API keys, apply rate limiting, monitor usage logs, and use OAuth.
+- **Source Code Protection**
+  - Add an open-source license, include copyright headers, keep repo private before release.
+- **App Protection**
+  - Use ProGuard for code obfuscation, sign APKs with secure keys, monitor Play Store for clones.
+
