@@ -11,8 +11,8 @@ TODO(sairiteshdomakuntla): Fill this section based on your analysis.
 ## DB Dev setup
 
 TODO(Rasagna2810): Fill this section based on your analysis.
-Database :MongoDb
-Files(image/video):AWS S3
+**Database :MongoDb**
+**Files(image/video):AWS S3**
 
 ## Data flow diagram
 
