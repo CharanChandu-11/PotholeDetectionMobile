@@ -266,6 +266,81 @@ TODO(hemanth-p-41)
 ## Backend APIs required
 
 TODO(manishnarmala)
+## 1. Pothole Reporting & Management APIs
+
+### Endpoints
+
+| Endpoint | Method | Description |
+|----------|--------|-------------|
+| /api/potholes/report | POST | Submit a new pothole report (location, image, description, user info) |
+| /api/potholes/upload-image | POST | Upload a pothole photo (optional separate endpoint) |
+| /api/potholes/nearby?lat=...&lng=... | GET | Get all potholes near a user's location |
+| /api/potholes/:id | GET | View details of a specific pothole |
+| /api/potholes/:id/status | PUT | Update pothole status (Pending → In Progress → Fixed) |
+| /api/potholes/user/:userId | GET | List all potholes reported by a particular user |
+| /api/potholes/stats | GET | Get aggregate stats (total, resolved, pending, etc.) |
+
+---
+
+## 2. AI Integration APIs
+
+| Endpoint | Method | Description |
+|----------|--------|-------------|
+| /api/ai/detect | POST | Upload an image/video for pothole detection using AI |
+| /api/ai/verify/:id | PUT | Confirm whether an AI-detected pothole is valid |
+| /api/ai/logs | GET | View history/log of AI detections (optional/admin use) |
+
+---
+
+## 3. Municipality Office APIs
+
+| Endpoint | Method | Description |
+|----------|--------|-------------|
+| /api/municipality/nearest?lat=...&lng=... | GET | Get the nearest municipality office to a given pothole |
+| /api/municipality/:id/potholes | GET | List of potholes assigned to a municipality |
+| /api/municipality/:id/respond | POST | Update status or response from municipality office |
+| /api/municipality/list | GET | List of all municipality offices (admin use) |
+
+---
+
+## 4. User Authentication & Profile APIs
+
+| Endpoint | Method | Description |
+|----------|--------|-------------|
+| /api/auth/register | POST | Register a new user |
+| /api/auth/login | POST | Log in a user and receive an auth token |
+| /api/auth/logout | POST | Log out the user (invalidate token) |
+| /api/user/profile | GET | Get logged-in user profile details |
+| /api/user/profile | PUT | Update user profile details |
+
+---
+
+## 5. Location & Mapping APIs
+
+| Endpoint | Method | Description |
+|----------|--------|-------------|
+| /api/location/reverse-geocode?lat=...&lng=... | GET | Convert coordinates into a readable address |
+| /api/location/area-potholes/:areaName | GET | Fetch all potholes in a named locality/zone |
+
+---
+
+## 6. Notifications APIs
+
+| Endpoint | Method | Description |
+|----------|--------|-------------|
+| /api/notifications/send | POST | Send a notification to a municipality (on report) |
+| /api/notifications/user | GET | Get all notifications related to a user (status updates, etc.) |
+
+---
+
+## 7. Admin & Analytics APIs
+
+| Endpoint | Method | Description |
+|----------|--------|-------------|
+| /api/admin/all-potholes | GET | Admin view of all potholes in the system |
+| /api/admin/metrics | GET | Admin metrics dashboard: reports by area, top users, etc. |
+| /api/admin/municipality/manage | POST/PUT | Add or update municipality data |
+| /api/admin/pothole/delete/:id | DELETE | Delete invalid or spam pothole reports |
 
 
 ## Play Store Setup
