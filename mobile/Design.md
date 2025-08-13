@@ -1,4 +1,4 @@
-# Design - Mobile for Crowd Monitor
+# Design - Mobile for Potholemapper
 
 ## Tech Stack & Development Setup
 
