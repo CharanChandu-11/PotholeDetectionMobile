@@ -9,10 +9,35 @@ TODO(Kavyasahithi006, vk-2828): Fill this section based on your analysis.
 TODO(Jahnavi2057): Fill this section based on your analysis.
 
 ## Test plan (Desktop)
+I worked on the entire PHD Test Cases file, carrying out a thorough end-to-end review of all 20 test cases to ensure they met the highest standards of accuracy, clarity, and consistency. My process began with a careful inspection of each record to confirm that every test case had a unique Test Case ID, a well-structured and descriptive summary, and a clearly defined expected result that aligns with the intended system behavior. I examined the dataset for any missing values, duplicate entries, or formatting irregularities and found none, confirming that the file maintains structural integrity throughout.
 
-TODO(a-ramsai): Fill this section based on your analysis.
+In my analysis, I focused not only on identifying errors but also on evaluating the overall quality and readiness of the test cases for real-world usage. I assessed whether the descriptions were precise enough for testers to understand the scenario without ambiguity and whether the expected results were measurable and verifiable. The results of my analysis show that the dataset is clean, logically organized, and free from redundancies, making it immediately usable for test execution, documentation, and reporting. This level of preparation ensures that the test cases can be executed efficiently, reduces the risk of misinterpretation during testing, and supports smooth integration into quality assurance workflows. Overall, the file is complete, reliable, and ready to play a critical role in ensuring software quality.
+
+| Test Case ID   | Description                                        | Expected Result                                  |
+|:---------------|:---------------------------------------------------|:-------------------------------------------------|
+| DTC_01         | Login with valid credentials                       | Dashboard is displayed                           |
+| DTC_02         | Login with invalid credentials                     | Error message shown                              |
+| DTC_03         | View AI-analyzed pothole reports                   | List of analyzed potholes shown                  |
+| DTC_04         | Mark pothole as fixed                              | Status changes to “Fixed”                        |
+| DTC_05         | Push fix status to user who reported               | Notification is sent                             |
+| DTC_06         | Assign route to committee for survey               | Route gets assigned and displayed                |
+| DTC_07         | Upload image/video manually to AI model            | AI processes input and detects pothole           |
+| DTC_08         | Generate report of hotspot areas                   | Report is downloadable/exportable                |
+| DTC_09         | View location on integrated map                    | Map centers on pothole location                  |
+| DTC_10         | System performance on data load                    | System doesn't crash with 1000+ reports          |
+| DTC_11         | Edit or update existing pothole details            | Details updated successfully and reflected in UI |
+| DTC_12         | Delete a wrongly reported pothole entry            | Pothole entry removed from database and UI       |
+| DTC_13         | Filter pothole data by severity, location, or date | Filtered results are displayed correctly         |
+| DTC_14         | Sort potholes by date of report or priority        | Sorted list appears in selected order            |
+| DTC_15         | Export full pothole report to PDF or Excel         | Exported file downloaded correctly               |
+| DTC_16         | Admin changes user role (e.g., viewer → editor)    | Role change is applied and confirmed             |
+| DTC_17         | Validate system access logs (login/logout times)   | Logs show correct timestamps and user IDs        |
+| DTC_18         | API fetch call for new pothole data                | Data fetched and displayed in real-time          |
+| DTC_19         | Attempt upload with corrupted image/video file     | System rejects file and shows error              |
+| DTC_20         | Session timeout after inactivity                   | User is auto-logged out and redirected to login  |
 
 ## Wire frame (Mobile)
+
 
 TODO(AnudeepReddyVeerati): Fill this section based on your analysis.
 
