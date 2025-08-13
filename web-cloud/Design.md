@@ -20,22 +20,34 @@ TODO(MohitKarthiekeya): Fill this section based on your analysis.
 
 TODO(gaddalecharmi): Fill this section based on your analysis.
 **The basic database schema for the Pothole Mapper project using Mongoose (MongoDB) includes the three key models:**
+
 **User Schema** – stores commuter, municipal staff, and admin details with role-based access.
+
 **Pothole Schema** – stores reported pothole data including location, images, AI verification status, and repair progress.
+
 **Feedback Schema** – stores user feedback, ratings, and optional links to specific potholes.
 
 ## List of APIs
 
 TODO(gaddalecharmi): Fill this section based on your analysis.
 We require the following API's: 
+
 -Google Maps JavaScript API
+
 -Google Maps Directions API
+
 -Google Maps Geocoding API
+
 -HTML5 Geolocation API
+
 -Cloudinary Upload API
+
 -Roboflow API / Hugging Face API
+
 -Firebase Cloud Messaging (FCM)
+
 -JWT Authentication (Custom MERN)
+
 -Your REST API Endpoints (Custom MERN)
 
 ## Security
