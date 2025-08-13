@@ -88,19 +88,19 @@ TODO(pthanmayee) : Fill this section based on your analysis.
    
 JWT-based Auth (Access + Refresh tokens)
 
-Access token: Short-lived (e.g., 15–30 min)
+   Access token: Short-lived (e.g., 15–30 min)
 
-Refresh token: Long-lived, stored securely in HTTP-only cookies.
+   Refresh token: Long-lived, stored securely in HTTP-only cookies.
 
 Role-based Access Control (RBAC)
 
-Roles: commuter, municipal_staff, admin.
+   Roles: commuter, municipal_staff, admin.
 
-Middleware checks role before allowing access to sensitive routes.
+   Middleware checks role before allowing access to sensitive routes.
 
 OAuth 2.0 (optional)
 
-Allow login with Google/Facebook for commuters to simplify sign-up.
+   Allow login with Google/Facebook for commuters to simplify sign-up.
 
 2. API Security
    
@@ -118,9 +118,9 @@ CSRF Protection for state-changing requests if cookies are used.
    
 AWS S3 Bucket Security
 
-Private by default; signed URLs for temporary access.
+   Private by default; signed URLs for temporary access.
 
-Scan uploads with an antivirus service (e.g., ClamAV Lambda) before storage.
+   Scan uploads with an antivirus service (e.g., ClamAV Lambda) before storage.
 
 Cloudinary / Roboflow / HuggingFace API Keys stored in server-side .env only.
 
