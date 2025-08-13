@@ -87,7 +87,7 @@ YOLO (You Only Look Once) is a real-time object detection algorithm that uses a 
 Google Cloud Vision API – uses convolutional neural networks (CNNs) for image classification, object detection, and OCR.
 Amazon Rekognition – employs deep learning models, mainly region-based CNNs (R-CNN variants), for face detection, object recognition, and video analysis.
 Microsoft Azure Computer Vision – combines CNNs and transformer-based vision models for tagging, scene understanding, and OCR.
-Clarifai API – utilizes CNNs and custom embedding models for visual search, detection, and classification tasks.
+Clarifai API – utilizes CNNs and custom embedding models for visual search, detection, and classification tasks. Expo location api uses Uses mobile device’s native GPS + accelerometer sensors, wrapped via React Native’s expo-location module.Google maps sdk,firebase firestore+storage uses no specific algorithm.FCM uses no ai,uses pub or sub notification mechanism.Firebase Auth uses Uses OAuth2.0, Secure Token Authentication (JWT) internally.
 
 These APIs implement deep learning architectures such as CNNs, R-CNN variants, and transformer-based vision models to analyze images. The process generally involves feature extraction, object localization, and classification to provide insights from visual data. The analysis ensures accurate detection, categorization, and description of visual elements for integration into applications.
 
