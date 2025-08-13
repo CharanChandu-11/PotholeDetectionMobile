@@ -386,6 +386,25 @@ TODO(manishnarmala)
 | /api/admin/pothole/delete/:id | DELETE | Delete invalid or spam pothole reports |
 
 
+
+## Data Flow Diagram
+<img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/8d9342ee-74fc-453c-92c8-e8bac0fc1152" />
+This dataflow diagram illustrates the architecture and information flow within the mobile pothole detection system. The Commenter (User) interacts with the Mobile App to upload pothole reports containing photos, geo-tags, and severity ratings. These inputs are routed through the API Gateway, which distributes data to specialized microservices:
+
+Pothole Reporting Service – Logs user reports and updates the Outputs DB, accessed by Municipal Staff for scheduling repairs.
+
+AI Detection Service – Analyzes submitted images, determines pothole severity, and updates the AI Engine.
+
+Notification Service – Manages real-time alerts, sending updates to users when the status of their reported pothole changes (e.g., work started, fixed) and logs them in the Notification DB.
+
+Routing Service – Provides alternative route suggestions, factoring in pothole severity from the AI Engine to generate safer travel paths.
+
+The Admin Pool collaboratively manages users, resolves conflicts (such as discrepancies between AI and user-reported severity), and updates relevant services. The Business Logic Layer includes User Management Services, ensuring user data is handled securely and permissions are enforced. Municipal Staff update repair statuses in the Outputs DB, which automatically triggers user notifications.
+
+This modular microservices design, connected through the API Gateway, ensures scalability, efficient communication, and clear separation of responsibilities. The integration of an Admin Pool, proactive notifications, and AI-driven routing enhances system responsiveness, safety, and user engagement.
+
+
+
 ## Play Store Setup
 
 TODO(khyathampratikshareddy-gif)
