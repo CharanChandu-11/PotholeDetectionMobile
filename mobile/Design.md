@@ -101,6 +101,164 @@ npx expo start --ios
 
 TODO(bhavyasree13, Nithya4115, kowshik86)
 
+## UI Components (React Native)
+
+A comprehensive list of UI components for the mobile application, arranged for easy tracking and implementation. `
+
+---
+
+##  1. Register Screen
+
+**Description:**  
+User/Admin registration form with input validation.
+
+**UI Elements:**
+- Input: Full Name  
+- Input: Email  
+- Input: Password  
+- Dropdown: Role (User / Admin)  
+- Submit Button  
+- Navigation to Login  
+
+**Notes:**
+- Use form validation for required fields  
+- Clear and consistent error messages  
+
+---
+
+##  2. Login Screen
+
+**Description:**  
+Login screen for both User and Admin.
+
+**UI Elements:**
+- Input: Email  
+- Input: Password  
+- Login Button  
+- Link to Register  
+- Password visibility toggle  
+- Show loading indicator during login  
+
+**Notes:**
+- Optional: visually differentiate User vs Admin login  
+
+---
+
+##  3. Report Submission Screen
+
+**Description:**  
+Screen where users submit pothole reports.
+
+**UI Elements:**
+- Image Picker (Open Camera / Gallery)  
+- Text Input: Description  
+- Auto-filled GPS Location (Latitude, Longitude)  
+- Dropdown / Picker: Severity (Low, Medium, High)  
+- Submit Button  
+
+**Notes:**
+- Display selected image thumbnail  
+- Use react-native-geolocation-service  
+- Optional: toggle to auto-assign severity using AI  
+
+---
+
+##  4. Map View Screen
+
+**Description:**  
+Interactive map showing pothole locations with severity indicators.
+
+**UI Elements:**
+- Map View (Google Maps / Apple Maps)  
+- Markers: Red (High), Yellow (Medium), Green (Low)  
+- Info Popup on marker tap  
+- Center-to-location button  
+- Refresh map button  
+
+**Notes:**
+- Use react-native-maps  
+- Optional: marker clustering for dense areas  
+
+---
+
+##  5. Pothole List Screen
+
+**Description:**  
+Scrollable list of all reported potholes.
+
+**UI Elements:**
+- FlatList / ScrollView of report cards  
+- Filter toggle or dropdown (optional)  
+- Sort by: Date, Severity  
+
+**Each Card Includes:**
+- Thumbnail Image  
+- Status badge  
+- Location (coordinates or address)  
+- Date of report  
+- Assigned Worker (if any)  
+
+**Notes:**
+- Cards should be tappable to navigate to detail screen  
+
+---
+
+##  6. Admin Dashboard Screen
+
+**Description:**  
+Admin interface to manage pothole reports and assignments.
+
+**UI Elements:**
+- Tabs: Pending, In Progress, Fixed  
+- List of Reports  
+- Dropdown / Modal to Assign Worker  
+- Dropdown / Buttons to Update Status  
+- Filter by Severity (optional)  
+
+**Notes:**
+- Show status clearly with colored badges  
+- Update actions only visible to admin  
+
+---
+
+##  7. Pothole Detail Screen
+
+**Description:**  
+Detailed view of a single pothole report.
+
+**UI Elements:**
+- Full-sized Image  
+- Description  
+- Location info (text or map)  
+- Status badge  
+- Severity level  
+- Date Reported  
+- Assigned Worker details  
+
+**Notes:**
+- Read-only view for regular users  
+- Admins can access additional options  
+
+---
+
+##  8. Shared UI Components
+
+**List of Common Components:**
+
+- `<CustomButton />` – Reusable styled button  
+- `<TextInputField />` – With validation and icons  
+- `<Header />` – Page title with optional back button  
+- `<StatusBadge />` – Displays status (Pending, In Progress, Fixed)  
+- `<PotholeCard />` – Summary card used in lists  
+- `<LoadingSpinner />` – Inline and full-screen loader  
+- `<DropdownSelector />` – Used for severity, role, worker selection  
+- `<ImagePicker />` – Component for selecting or capturing images  
+
+**Notes:**
+- Keep design consistent across screens  
+- Make components responsive and reusable  
+
+
 ## Device APIs
 
 TODO(hemanth-p-41)
