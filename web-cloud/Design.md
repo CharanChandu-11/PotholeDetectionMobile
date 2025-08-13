@@ -20,6 +20,28 @@ TODO(Rasagna2810): Fill this section based on your analysis.
 
 TODO(MohitKarthiekeya): Fill this section based on your analysis.
 
+Here’s the concise summary:
+
+**Frontend (User-facing in React):**
+
+* Web app with municipal dashboard
+* Map showing potholes
+* Filters for severity & repair status
+* Interface to fetch pothole data
+
+**Backend (Node.js/Express APIs):**
+
+1. **Receive Report:** Accepts image + metadata, validates, stores image, forwards metadata
+2. **Verify & Analyze:** Runs YOLO AI model to confirm pothole & score severity
+3. **Store Data:** Saves verified info in MongoDB
+4. **Serve Data:** APIs for frontend to query with filters
+
+**Data Storage:**
+
+* **Cloud Storage (S3/Azure Blob):** Stores raw images for AI analysis
+* **MongoDB:** Stores pothole records, user info, repair status
+
+
 ## Database schema
 
 TODO(gaddalecharmi): Fill this section based on your analysis.
