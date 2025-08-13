@@ -44,6 +44,30 @@ TODO(AnudeepReddyVeerati): Fill this section based on your analysis.
 ## Test plan (Mobile)
 
 TODO(Yoshith-9030): Fill this section based on your analysis.
+The mobile test plan for the Pothole Detection (PHD) application is based on 20 well-defined functional test cases covering core user journeys, including app permissions (camera, location), media capture and upload, AI-based pothole detection, report submission, status tracking, and navigation. All cases have clear expected outcomes, ensuring traceability and repeatability. Test descriptions are concise and action-oriented, enabling efficient execution. While the current coverage addresses positive scenarios comprehensively, further enhancement is recommended by incorporating negative tests (e.g., permission denial, invalid file formats, no internet connectivity), performance tests (e.g., large file uploads, high report volume), and security validations (e.g., GPS spoofing prevention, data privacy checks). This will strengthen reliability, resilience, and security of the mobile application.
+| Test_Cases_ID | Test Case Description                                     | Expected Result                                           |
+|---------------|-----------------------------------------------------------|-----------------------------------------------------------|
+| TC_01         | Open app and allow camera & location permissions          | App starts and camera/GPS is enabled                      |
+| TC_02         | Capture and upload pothole image/video                     | File uploads successfully                                 |
+| TC_03         | AI auto-detects pothole in real-time                        | Pothole is highlighted and marked                         |
+| TC_04         | Submit pothole report with optional note                    | Submission confirmation shown                             |
+| TC_05         | Track status of submitted complaint                        | Status updates correctly (e.g., pending → fixed)          |
+| TC_06         | Receive push notification on update                        | User is notified                                          |
+| TC_07         | App works with no internet (store offline)                  | Report is saved and synced once online                    |
+| TC_08         | View all nearby potholes on map                             | Map pins display accurately                               |
+| TC_09         | Try submitting without location access                      | Error prompts to enable location                          |
+| TC_10         | Performance on low-end devices                              | App remains responsive and usable                         |
+| TC_11         | User registration with valid details                        | User account created                                      |
+| TC_12         | Manually submit pothole with image                          | Pothole added to map                                      |
+| TC_13         | Logout functionality                                        | User logged out successfully                              |
+| TC_14         | Sync data when online (after offline usage)                 | Reports synced to server                                  |
+| TC_15         | Navigation between tabs (Map, Report, Profile)              | Tabs switch correctly                                     |
+| TC_16         | Buttons and icons respond correctly to taps                 | Smooth interaction                                        |
+| TC_17         | Dark mode rendering                                         | Proper theme switch                                       |
+| TC_18         | Location permission handling                                | Prompt shown, app behavior adjusts                        |
+| TC_19         | App launches within 2 seconds                               | Launch successful                                         |
+| TC_20         | Map loads with multiple pothole markers                     | No lag or crash                                           |
+
 
 ## Market Analysis
 
