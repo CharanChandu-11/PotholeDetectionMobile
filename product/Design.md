@@ -2,7 +2,12 @@
 
 ## Brainstorming Summary
 
-TODO(Kavyasahithi006, vk-2828): Fill this section based on your analysis.
+TODO(Kavyasahithi006, vk-2828): 
+This project is a smart pothole detection and management system that connects commuters and municipal authorities through a simple dashboard. Commuters can upload images or videos of potholes with location data and descriptions, which are processed by an AI model to detect potholes. The system displays a route map with red spots indicating potholes and suggests alternative, safer routes. It also includes a reward-based system to encourage users to contribute regularly.
+
+Municipal authorities get a dashboard showing all reported potholes, their locations, and priority levels based on upload time and severity. They can update the status after fixing potholes by uploading proof images and notifying the user who raised the complaint. This system improves road safety, ensures quicker pothole resolution, and encourages active public participation.[
+
+
 
 ## Wire frame (Desktop)
 
