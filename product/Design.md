@@ -48,7 +48,7 @@ TODO(AnudeepReddyVeerati): Fill this section based on your analysis.
 
 ## Test plan (Mobile)
 
-TODO(Yoshith-9030): Fill this section based on your analysis.
+TODO(Yoshith-9030):
 The mobile test plan for the Pothole Detection (PHD) application is based on 20 well-defined functional test cases covering core user journeys, including app permissions (camera, location), media capture and upload, AI-based pothole detection, report submission, status tracking, and navigation. All cases have clear expected outcomes, ensuring traceability and repeatability. Test descriptions are concise and action-oriented, enabling efficient execution. While the current coverage addresses positive scenarios comprehensively, further enhancement is recommended by incorporating negative tests (e.g., permission denial, invalid file formats, no internet connectivity), performance tests (e.g., large file uploads, high report volume), and security validations (e.g., GPS spoofing prevention, data privacy checks). This will strengthen reliability, resilience, and security of the mobile application.
 | Test_Cases_ID | Test Case Description                                     | Expected Result                                           |
 |---------------|-----------------------------------------------------------|-----------------------------------------------------------|
