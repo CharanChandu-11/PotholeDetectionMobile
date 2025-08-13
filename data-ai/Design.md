@@ -37,7 +37,19 @@ TODO(architha-196): Fill this section based on your analysis.
 
 ## Pre-built APIs
 
-TODO(gouthamlingoju): Fill this section based on your analysis.
+## 🚧 Recommended APIs for Pothole Detection Prototype
+
+### **High Priority**
+1. **Roboflow YOLOv8 API** – Fastest option for building a working pothole detection model.  
+   *Add-on:* Can also use **Google Gemini API** or **OpenAI Vision API** for detection and classification as a secondary or hybrid approach.  
+2. **Expo Location API** – Tags pothole coordinates in the mobile app.  
+3. **Google Maps SDK** – Displays detected potholes in both the app and dashboard.  
+
+### **Medium Priority**
+4. **Firebase Firestore + Storage** – Simple backend to store pothole data and images/videos.  
+5. **Firebase Auth** – Enables commuter/engineer login with role-based UI.  
+6. **Firebase Cloud Messaging (FCM)** – Sends updates on pothole resolution to users.  
+
 
 ## Vision Algorithms
 TODO(Raavi-Havish): Fill this section based on your analysis.
