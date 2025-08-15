@@ -20,9 +20,26 @@
 *Newly assigned task: Answer queries on the Wireframe from the Web & Cloud and Mobile teams.
 * TL score (0-100) : <leave this empty for the TL-self>
 
-### <Person 2>
+**Ritheesh**
+*Researched civic issue reporting apps and smart city initiatives such as FixMyStreet, SeeClickFix, GHMC App, and BBMP Sahaaya. Focused on understanding their approaches to issue escalation, integration with local authorities, and encouraging public participation. The findings will help in designing effective backend workflows and reporting features for our system.
+*No pull requests as of now.
+*Newly assigned task: Answer queries on the Wireframe from the Web & Cloud and Mobile teams.
+* TL score (0-100) : <leave this empty for the TL-self>
 
-* <updates on currently assigned tasks>
-* <url to any pull requests>
-* <url to any newly assigned tasks during the scrum>
+**Amogh**
+*Researched India’s pothole detection market, covering private players like RoadBounce (Pothole Guard), government apps such as Pothole QuickFix, Road Mitra, Meri Sadak, and crowdsourced platforms like FixMyStreet. Identified gaps in current solutions and proposed PotHoleMapper as a complete solution with GPS heatmaps, AI-powered live video detection, and real-time warnings.
+*No pull requests as of now.
+*Newly assigned task: Presenting the wireframes.
+* TL score (0-100) : <leave this empty for the TL-self>
+
+**Anudeep**
+*Created mobile UI wireframes for the project using Figma, focusing on a clean and user-friendly interface. View wireframes here.
+*No pull requests as of now.
+*Newly assigned task: Presenting the wireframes.
+* TL score (0-100) : <leave this empty for the TL-self>
+
+**Jahnavi**
+*Worked on creating mobile UI wireframes for our project using Figma, emphasizing intuitive navigation and seamless user experience. View wireframes here.
+*No pull requests as of now.
+*Newly assigned task: Presenting the wireframes.
 * TL score (0-100) : <leave this empty for the TL-self>
