@@ -2,9 +2,6 @@
 
 ## <Date> 06/08/2025
 
-* <updates on currently assigned tasks>
-* <url to any pull requests>
-* <url to any newly assigned tasks during the scrum>
 **Sai Ritesh** – Tech Stack & Basic Development Setup
 Chose the project’s technology stack.
 Set up the initial development environment for the team to start working.
@@ -27,4 +24,8 @@ Documented the security and authentication aspects for the system.
 Designed the role-based authentication (using JWT).
 Addressed data protection and API security measures.
 * TL score (0-100) : <leave this empty for the TL-self>
+* <updates on currently assigned tasks>
+* <url to any pull requests>
+* <url to any newly assigned tasks during the scrum>
+
 
