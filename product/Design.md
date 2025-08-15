@@ -45,6 +45,9 @@ In my analysis, I focused not only on identifying errors but also on evaluating 
 
 
 TODO(AnudeepReddyVeerati): Fill this section based on your analysis.
+Created detailed UI/UX wireframes to visualize the structure, flow, and interaction patterns of the application. Focused on translating requirements into intuitive layouts, ensuring usability, consistency, and alignment with brand guidelines. Designed user journeys and component placements to optimize navigation and overall user experience, setting a solid foundation for high-fidelity designs and development.
+This is the link for UI wireframes:
+https://www.figma.com/proto/0vuyhpgo3feCd37IDMJkfm/Untitled?node-id=0-1&t=EdjTqhXbnM5rzjRA-1%20%20Mobile%20wireframes
 
 ## Test plan (Mobile)
 
