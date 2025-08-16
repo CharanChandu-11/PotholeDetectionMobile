@@ -17,6 +17,14 @@
 * *Next task:* Answer queries on the API list to the Web & Cloud team  
 * TL score (0-100) : 
 
+### Charan
+
+* I chose tech stack and completed basic development setup using React Native. Implemented the Landing Page as part of placeholder pages.  
+*  
+* *Next task:* Take the wireframe from the Product team and continue creating placeholder pages as per the wireframe.  
+* TL score (0-100) : 
+
+
 
 ### <Person 3>
 
