@@ -25,7 +25,6 @@
 
 *  
 * *Next task:* Take the wireframe from the Product team and continue creating placeholder pages as per the wireframe , Implemented the Landing Page as part of placeholder pages
-* TL score (0-100) : 
 
 
 
