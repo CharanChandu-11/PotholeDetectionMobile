@@ -1,35 +1,41 @@
 import React from "react";
 import { View, Text, TouchableOpacity, ScrollView } from "react-native";
-import { Camera, MapPin } from "phosphor-react-native"; // make sure you installed: npm i phosphor-react-native
+import { Camera, MapPin } from "phosphor-react-native";
 import { useRouter } from "expo-router";
+import ImageSlider from "../components/ImageSlider"; // adjust path
 
 export default function LandingPage() {
   const router = useRouter();
 
   return (
-<ScrollView className="flex-1 bg-gradient-to-br from-gray-900 via-gray-800 to-black">
+    <ScrollView className="flex-1 bg-gradient-to-br from-gray-900 via-gray-800 to-black">
       {/* Header */}
       <View className="flex-row items-center justify-between px-6 pt-12">
         <View className="flex-row items-center space-x-2">
-          <View className="w-12 h-12 bg-gradient-to-r from-orange-400 to-red-500 rounded-xl items-center justify-center">
-            <Camera size={28} color="white" />
+          <View className="w-12 h-12 bg-yellow-400 rounded-xl items-center justify-center">
+            <Camera size={30} color="black" />
           </View>
-          <Text className="text-2xl font-bold text-white">PotholeAI</Text>
+          <Text className="text-2xl font-bold text-white">PotholeMapper</Text>
         </View>
 
         <TouchableOpacity
           className="bg-white/20 px-5 py-2 rounded-full"
           onPress={() => router.push("/Login")}
         >
-          <Text className="text-white font-semibold">Get Started</Text>
+          <Text className="text-white font-semibold">Login</Text>
         </TouchableOpacity>
       </View>
 
       {/* Hero Section */}
-      <View className="items-center px-6 py-16">
+      <View className="items-center px-6 py-12">
+        {/* 🔥 ImageSlider here */}
+        <View className="w-full h-56 mb-8 rounded-2xl overflow-hidden">
+          <ImageSlider />
+        </View>
+
         <Text className="text-5xl font-bold text-center text-white leading-tight">
           Smart Road{"\n"}
-          <Text className="bg-gradient-to-r from-orange-400 via-red-500 to-pink-500 text-transparent bg-clip-text">
+          <Text className="bg-gradient-to-r from-yellow-400 via-yellow-500 to-red-500 text-transparent bg-clip-text">
             Monitoring
           </Text>
         </Text>
@@ -41,10 +47,10 @@ export default function LandingPage() {
         {/* Hero Buttons */}
         <View className="flex-row space-x-4 mt-10">
           <TouchableOpacity
-            className="bg-gradient-to-r from-orange-500 to-red-600 px-6 py-3 rounded-full shadow-lg"
+            className=" bg-yellow-400 px-6 py-3 rounded-full shadow-lg"
             onPress={() => router.push("/ReportPothole")}
           >
-            <Text className="text-white font-bold text-lg">Start Detecting</Text>
+            <Text className="text-black font-bold text-lg">Start Detecting</Text>
           </TouchableOpacity>
 
           <TouchableOpacity
